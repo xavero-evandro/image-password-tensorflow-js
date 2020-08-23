@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Image Password!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Load TensorFlow.js. This is required to use coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs" defer> </script>
+    <!-- Load the coco-ssd model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd" defer> </script>
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1>Image Object Classification with TensorFlow.js</h1>
+    <h2>Show all objects in the right order to reveal the secret</h2>
+
+    <div class="password">
+
+    </div>
+
+    <div class="responsive-embed">
+        <video id="webcam" autoplay></video>
+    </div>
+
+    <pre class="current-predictions"></pre>
+
+</body>
+
+</html>
